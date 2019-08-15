@@ -18,7 +18,7 @@ public class FileHelper {
         return result;
     }
 
-    public static void writeArrayToFile(String fileName, String... array) {
+    public static void writeArrayToFile(String fileName, ArrayList<String> array) {
         try(BufferedWriter bw = new BufferedWriter(new FileWriter(fileName))) {
             for (String s : array) {
                 bw.write(s);
